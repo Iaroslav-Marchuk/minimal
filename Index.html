@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Minimal</title>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script type="module" src="./main.js"></script>
+  </head>
+  <body>
+    <!-- header section -->
+    <header class="page-header">
+      <div class="container header-container">
+        <nav class="nav">
+          <a href="index.html" class="nav-logo">
+            <svg class="logo-icon" width="127" height="16">
+              <use href="./images/icons.svg#icon-logo"></use>
+            </svg>
+          </a>
+
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About us</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#products" class="nav-link">Our products</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#prices" class="nav-link">Prices</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#bestsellers" class="nav-link">Bestsellers</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#reviews" class="nav-link">Reviews</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#contacts" class="nav-link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="burger-btn" type="button" open-menu>
+          <svg class="burger-icon" width="32" height="32">
+            <use href="./images/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!-- mobile-tablet menu  -->
+      <div class="mobile-menu" menu>
+        <div class="container mobile-menu-container">
+          <div class="mobile-menu-wrapper">
+            <a href="index.html" class="mobile-menu-logo">
+              <svg class="mobile-menu-logo-icon" width="127" height="16">
+                <use href="./images/icons.svg#icon-logo"></use>
+              </svg>
+            </a>
+            <button class="button-menu-close" type="button" menu-close>
+              <svg class="icon-close" width="32" height="32">
+                <use href="./images/icons.svg#icon-x"></use>
+              </svg>
+            </button>
+          </div>
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-list">
+              <li class="mobile-menu-item">
+                <a href="#about" class="mobile-menu-link">About us</a>
+              </li>
+
+              <li class="mobile-menu-item">
+                <a href="#products" class="mobile-menu-link">Our products</a>
+              </li>
+
+              <li class="mobile-menu-item">
+                <a href="#prices" class="mobile-menu-link">Prices</a>
+              </li>
+
+              <li class="mobile-menu-item">
+                <a href="#bestsellers" class="mobile-menu-link">Bestsellers</a>
+              </li>
+
+              <li class="mobile-menu-item">
+                <a href="#reviews" class="mobile-menu-link">Reviews</a>
+              </li>
+
+              <li class="mobile-menu-item">
+                <a href="#contacts" class="mobile-menu-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- hero section -->
+      <section class="hero">
+        <div class="container hero-container">
+          <h1 class="hero-title">Modern and minimalist furniture for you</h1>
+          <div class="hero-wrapper">
+            <p class="hero-text">
+              Add a touch of elegance to your space with handcrafted furniture
+              pieces
+            </p>
+            <button type="submit" class="btn hero-btn">Subscribe</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- about us section -->
+      <section class="about" id="about">
+        <div class="container about-container">
+          <div class="about-left">
+            <span class="about-span">About us</span>
+            <h2 class="about-title">
+              Our сraftsmanship: сreating unique handmade furniture
+            </h2>
+            <p class="about-text">
+              Discover the inspiration behind our modern and minimalist designs,
+              and see how we bring them to life through our skilled
+              craftsmanship.
+            </p>
+            <ul class="about-list">
+              <li class="about-item">
+                <span class="item-span">5+</span>
+                <p class="item-text">
+                  Years of experience creating handcrafted furniture
+                </p>
+              </li>
+              <li class="about-item">
+                <span class="item-span">100%</span>
+                <p class="item-text">
+                  Sustainably sourced materials used in all of our furniture
+                </p>
+              </li>
+              <li class="about-item">
+                <span class="item-span">500+</span>
+                <p class="item-text">
+                  Unique furniture designs crafted by our skilled artisans
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="about-right">
+            <img
+              src="./images/about/product_desk@1x.jpg"
+              srcset="
+                ./images/about/product_desk@1x.jpg 1x,
+                ./images/about/product_desk@2x.jpg 2x
+              "
+              width="536"
+              height="540"
+              alt="sofa"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- prices section -->
+      <section class="prices" id="prices">
+        <div class="container prices-container">
+          <h2 class="visually-hidden">Minimal prices</h2>
+          <ul class="prices-list">
+            <li class="prices-item">
+              <span class="item-left">Chairs</span>
+              <span class="item-right">from 200$</span>
+            </li>
+            <li class="prices-item">
+              <span class="item-left">Tables</span>
+              <span class="item-right">from 250$</span>
+            </li>
+            <li class="prices-item">
+              <span class="item-left">Dressers</span>
+              <span class="item-right">from 300$</span>
+            </li>
+            <li class="prices-item">
+              <span class="item-left">Sofas</span>
+              <span class="item-right">from 500$</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- products section -->
+      <section class="products" id="products">
+        <div class="container products-container">
+          <h2 class="products-title">OUR PRODUCTS</h2>
+          <ul class="products-list">
+            <li class="products-item">
+              <img
+                src="./images/products/product_1@1x.jpg"
+                srcset="
+                  ./images/products/product_1@1x.jpg 1x,
+                  ./images/products/product_1@2x.jpg 2x
+                "
+                width="312"
+                height="300"
+                alt="Console table"
+              />
+              <p class="products-text">Minimalist storage solutions</p>
+            </li>
+
+            <li class="products-item">
+              <img
+                src="./images/products/product_2@1x.jpg"
+                srcset="
+                  ./images/products/product_2@1x.jpg 1x,
+                  ./images/products/product_2@2x.jpg 2x
+                "
+                width="312"
+                height="300"
+                alt="sofa"
+              />
+              <p class="products-text">Handcrafted minimalist seating</p>
+            </li>
+
+            <li class="products-item">
+              <img
+                src="./images/products/product_3@1x.jpg"
+                srcset="
+                  ./images/products/product_3@1x.jpg 1x,
+                  ./images/products/product_3@2x.jpg 2x
+                "
+                width="312"
+                height="300"
+                alt="table"
+              />
+              <p class="products-text">Sleek and simple tables</p>
+            </li>
+
+            <li class="products-item">
+              <img
+                src="./images/products/product_4@1x.jpg"
+                srcset="
+                  ./images/products/product_4@1x.jpg 1x,
+                  ./images/products/product_4@2x.jpg 2x
+                "
+                width="312"
+                height="300"
+                alt="chair"
+              />
+              <p class="products-text">Minimalist seating for every space</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- bestsellers section -->
+      <section class="bestsellers" id="bestsellers">
+        <div class="container bestsellers-container">
+          <h2 class="bestsellers-title">Bestsellers</h2>
+          <div class="bestsellers-wrapper">
+            <div class="bestsellers-left">
+              <img
+                src="./images/bestsellers/product_1@x1.jpg"
+                srcset="
+                  ./images/bestsellers/product_1@x1.jpg 1x,
+                  ./images/bestsellers/product_1@x2.jpg 2x
+                "
+                width="536"
+                height="489"
+                alt="platform bed"
+              />
+              <p class="bestsellers-left-text">The modern platform bed</p>
+              <span class="bestsellers-left-span">750$</span>
+            </div>
+            <div class="bestsellers-right">
+              <ul class="bestsellers-right-list">
+                <li class="bestsellers-right-item">
+                  <img
+                    src="./images/bestsellers/product_2@x1.jpg"
+                    srcset="
+                      ./images/bestsellers/product_2@x1.jpg 1x,
+                      ./images/bestsellers/product_2@x2.jpg 2x
+                    "
+                    width="258"
+                    height="193"
+                    alt="Lounge Chair"
+                  />
+                  <p class="bestsellers-right-text">The Cozy Lounge Chair</p>
+                  <span class="bestsellers-right-span">230$</span>
+                </li>
+                <li class="bestsellers-right-item">
+                  <img
+                    src="./images/bestsellers/product_3@x1.jpg"
+                    srcset="
+                      ./images/bestsellers/product_3@x1.jpg 1x,
+                      ./images/bestsellers/product_3@x2.jpg 2x
+                    "
+                    width="258"
+                    height="193"
+                    alt="accent chair"
+                  />
+                  <p class="bestsellers-right-text">
+                    The industrial accent chair
+                  </p>
+                  <span class="bestsellers-right-span">250$</span>
+                </li>
+                <li class="bestsellers-right-item">
+                  <img
+                    src="./images/bestsellers/product_4@x1.jpg"
+                    srcset="
+                      ./images/bestsellers/product_4@x1.jpg 1x,
+                      ./images/bestsellers/product_4@x2.jpg 2x
+                    "
+                    width="258"
+                    height="193"
+                    alt="stand"
+                  />
+                  <p class="bestsellers-right-text">The sleek stand</p>
+                  <span class="bestsellers-right-span">300$</span>
+                </li>
+                <li class="bestsellers-right-item">
+                  <img
+                    src="./images/bestsellers/product_5@x1.jpg"
+                    srcset="
+                      ./images/bestsellers/product_5@x1.jpg 1x,
+                      ./images/bestsellers/product_5@x2.jpg 2x
+                    "
+                    width="258"
+                    height="193"
+                    alt="sofa"
+                  />
+                  <p class="bestsellers-right-text">The minimalist sofa</p>
+                  <span class="bestsellers-right-span">650$</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- reviews section -->
+      <section class="reviews" id="reviews">
+        <div class="container reviews-container">
+          <h2 class="reviews-tittle">Clients reviews</h2>
+          <ul class="reviews-list">
+            <li class="reviews-item">
+              <div class="reviews-item-wrapper">
+                <img
+                  class="reviews-pic"
+                  src="./images/reviews/Ellipse_1@1x.jpg"
+                  alt="Alexandra dream"
+                />
+                <div class="reviews-item-info">
+                  <h3 class="reviews-item-name">Alexandra dream</h3>
+                  <span class="reviews-item-span">1 week ago</span>
+                </div>
+              </div>
+              <p class="reviews-item-text">
+                I was blown away by the quality and craftsmanship of the
+                furniture I received from this company. Each piece was unique
+                and beautifully designed, and you can tell that a lot of thought
+                and care goes into every detail.
+              </p>
+            </li>
+            <li class="reviews-item">
+              <div class="reviews-item-wrapper">
+                <img
+                  class="reviews-pic"
+                  src="./images/reviews/Ellipse_2@1x.jpg"
+                  alt="James Williams"
+                />
+                <div class="reviews-item-info">
+                  <h3 class="reviews-item-name">James Williams</h3>
+                  <span class="reviews-item-span">A week ago</span>
+                </div>
+              </div>
+              <p class="reviews-item-text">
+                The "Minimal" furniture set is a fantastic addition to my home.
+                It boasts a minimalist design, enhancing the feel and look of my
+                living space. The sturdy construction is worth noting too, which
+                speaks volumes about its durability.
+              </p>
+            </li>
+            <li class="reviews-item">
+              <div class="reviews-item-wrapper">
+                <img
+                  class="reviews-pic"
+                  src="./images/reviews/Ellipse_3@1x.jpg"
+                  alt="Emily Watson"
+                />
+                <div class="reviews-item-info">
+                  <h3 class="reviews-item-name">Emily Watson</h3>
+                  <span class="reviews-item-span">3 week ago</span>
+                </div>
+              </div>
+              <p class="reviews-item-text">
+                The "Minimal" furniture set has far exceeded my expectations.
+                The sleek design combined with the high-quality materials have
+                not only added an exceptional aesthetic to my space but also
+                offered an uncompromising standard of comfort.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- contacts section -->
+      <section class="contacts" id="contacts">
+        <div class="container contacts-container">
+          <div class="contacts-left">
+            <h2 class="contacts-title">Newsletter</h2>
+            <p class="contacts-text">
+              Every week we will send you new designs and information about
+              sales.
+            </p>
+            <form class="contacts-form">
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  class="input"
+                  name="user-name"
+                  placeholder="Name"
+                  required
+                />
+              </div>
+              <div class="input-wrapper">
+                <input
+                  type="email"
+                  class="input"
+                  name="user-email"
+                  placeholder="Email"
+                  required
+                  pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+                />
+                <span class="input-icon">
+                  <svg class="input-error" width="24" height="24">
+                    <use href="./images/icons.svg#icon-error"></use>
+                  </svg>
+                </span>
+              </div>
+            </form>
+
+            <div class="privacy-container">
+              <input
+                type="checkbox"
+                id="user-privacy"
+                value="true"
+                name="user-privacy"
+                class="visually-hidden"
+              />
+              <label for="user-privacy" class="check-box">
+                <span class="label-checkbox-span">
+                  <svg class="icon-checkbox" width="13" height="13">
+                    <use href="./images/icons.svg#icon-checked"></use>
+                  </svg>
+                </span>
+                <span>Agree to subscribe to the newsletter </span>
+              </label>
+            </div>
+
+            <button class="btn contacts-btn" type="submit">Send</button>
+          </div>
+          <div class="contacts-right">
+            <img
+              src="./images/contacts/img_desk@1x.jpg"
+              srcset="
+                ./images/contacts/img_desk@1x.jpg 1x,
+                ./images/contacts/img_desk@2x.jpg 2x
+              "
+              width="460"
+              height="410"
+              alt="table and chair"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer section -->
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-top">
+          <a href="index.html" class="footer-top-logo">
+            <svg class="logo-icon" width="127" height="16">
+              <use href="./images/icons.svg#icon-logo"></use>
+            </svg>
+          </a>
+
+          <div class="footer-social">
+            <ul class="footer-social-list">
+              <li class="footer-social-item">
+                <a
+                  href="https://facebook.com"
+                  class="footer-social-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Link to Facebok"
+                >
+                  <svg class="social-icon" width="40" height="40">
+                    <use href="./images/icons.svg#facebook-logo"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="footer-social-item">
+                <a
+                  href="https://facebook.com"
+                  class="footer-social-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Link to Instagram"
+                >
+                  <svg class="social-icon" width="40" height="40">
+                    <use href="./images/icons.svg#instagram-logo"></use>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="footer-social-item">
+                <a
+                  href="https://facebook.com"
+                  class="footer-social-link"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Link to YouTube"
+                >
+                  <svg class="social-icon" width="40" height="40">
+                    <use href="./images/icons.svg#youtube-logo"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <nav class="footer-nav">
+          <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <a href="#about" class="footer-nav-link">About us</a>
+            </li>
+
+            <li class="footer-nav-item">
+              <a href="#products" class="footer-nav-link">Our products</a>
+            </li>
+
+            <li class="footer-nav-item">
+              <a href="#prices" class="footer-nav-link">Prices</a>
+            </li>
+
+            <li class="footer-nav-item">
+              <a href="#bestsellers" class="footer-nav-link">Bestsellers</a>
+            </li>
+
+            <li class="footer-nav-item">
+              <a href="#reviews" class="footer-nav-link">Reviews</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="footer-contacts">
+          <div class="footer-post">
+            <ul class="footer-post-list">
+              <li class="footer-post-item">
+                <p class="footer-post-text">Obolonsky Prospect, 14, Kyiv</p>
+              </li>
+              <li class="footer-post-item">
+                <p class="footer-post-text">Daily 10:00-21:00</p>
+              </li>
+            </ul>
+          </div>
+          <address class="footer-address">
+            <ul class="footer-address-list">
+              <li class="footer-address-item">
+                <a class="footer-address-link" href="tel:+380669384758"
+                  >+380669384758</a
+                >
+              </li>
+              <li class="footer-address-item">
+                <a class="footer-address-link" href="tel:+380679384758"
+                  >+380679384758</a
+                >
+              </li>
+              <li class="footer-address-item">
+                <a
+                  class="footer-address-link"
+                  href="mailto:minimal.furniture@gmail.com"
+                  >minimal.furniture@gmail.com</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="footer-bottom-text">
+            By using this website, you agree to the
+            <a href="#" class="privacy">Terms of Service</a> and
+            <a href="#" class="privacy">Privacy Policy</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>
